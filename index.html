@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devante Harvey Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <a href="/">Devante H</a>
+    <nav>
+        <a target="_blank" href="https://github.com/DevanteH93"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="https://github.com/DevanteH93"><i class="fa-brands fa-linkedin"></i></a>
+    </nav>
+</header>
+<main>
+    <section>
+        <div class="intro-header">
+            <h1>Namaste! I'm Devante...</h1>
+            <p>I'm a Software Developer</p>
+        </div>
+        <h5 class="intro-description">
+              A software developer from Las Vegas with a love for learning, coding, and creating new things. I enjoy building small projects, exploring new technologies, working on small projects that help me grow my skills ,and continuously improving in web development!
+        </h5>
+        <div class="links-container">
+            <i class="fa-solid link-arrow fa-arrow-right"></i>
+            <a href="mailto:devanteh93@gmail.com"> Email Me</a>
+            <a target="_blank" href="https://github.com/DevanteH93">LinkedIn</i></a>
+        <a target="_blank" href="https://github.com/DevanteH93"></i>GitHub</a>
+        </div>
+        <div id="play-game">
+            <button onclick="playGame()">Play Game???</button>
+        </div>
+        <div style="display: none;" class="color-div">
+            <h4>Pick A Color</h4>
+            <p style="display: none;">Great...You've Ruined It 😒👍</p>
+            <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+            <button style="display: none;" onclick="resetColor()">Reset</button> 
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Area</th>
+                    <th>Technologies</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Javascript</td>
+                    <td>ReactJS | React Native | NextJS | NodeJS & ExpressJS | SvelteKit | Qwik</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Data analysis | Django | Data visualization</td>
+                </tr>
+                <tr>
+                    <td>Web</td>
+                    <td>TailwindCSS | FantaCSS | Firebase | PostgreSQL | CI/CD | GIT | Docker | Kubernetes | AWS</td>
+                </tr>
+                <tr>
+                    <td>Design</td>
+                    <td>Canvas | Pixlr | Microsoft Paint</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Latest Projects</h2>
+        <div class="cards-grid">
+            <div class="project-card">
+                <div>
+                    <p>November 25, 2025</p>
+                    <h4>TrainrPath</h4>
+                    <div class="tech-list">
+                        <div class="card-button-secondary">
+                           <p>JavaScript</p> 
+                        </div>
+                        <div class="card-button-secondary">
+                            <p>ReactJS</p>
+                        </div>
+                        <div class="card-button-secondary">
+                           <p>CSS</p> 
+                        </div>
+                    </div>
+                    <p>Complete this training program if you want to...
+                        <li>Follow a simple program with guaranteed results</li>
+                        <li>Get fit, healty, strong and shredded</li>
+                        <li>Learn more about gym, training and technique</li>
+                        <li>You got this!!! All it takes is one step at a time! 💪🏽🏋🏾‍♂️</li></p>
+                       <div class="project-links">
+                            <a target="_blank" href="https://trainrpath.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/DevanteH93/TrainrPath">GitHub</a>
+                       </div>
+                </div>
+                <div class="image-div">
+                    <img class="big-img" src="./photos/Screenshot 2025-11-02 173309.png" alt="trainrpath-thumbnail">
+                </div>
+            </div>
+
+                        <div class="project-card">
+                <div>
+                    <p>January 2, 2026</p>
+                    <h4>TheOrganizedDev</h4>
+                    <div class="tech-list">
+                        <div class="card-button-secondary">
+                            <p>NextJS</p>
+                        </div>
+                        <div class="card-button-secondary">
+                            <p>Stripe</p>
+                        </div>
+                        <div class="card-button-secondary">
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <p>Super cool store for programmers and productivity fiends.!</p>
+                       <div class="project-links">
+                            <a target="_blank" href="https://main.d1n5xkii71be6l.amplifyapp.com">Live</a>
+                            <a target="_blank" href="https://github.com/DevanteH93/TheOrganizedDev">GitHub</a>
+                       </div>
+                </div>
+                <div class="image-div">
+                    <img class="big-img" src="./photos/Screenshot 2026-01-05 095303.png" alt="TheOrganizedDev-thumbnail">
+                </div>
+            </div>
+
+                        <div class="project-card">
+                <div>
+                    <p>January 4, 2026</p>
+                    <h4>SubTrackr</h4>
+                    <div class="tech-list">
+                        <div class="card-button-secondary">
+                           <p>Firebase</p> 
+                        </div>
+                        <div class="card-button-secondary">
+                           <p>NextJS</p> 
+                        </div>
+                        <div class="card-button-secondary">
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <p>Track all of your subscription analytics!</p>
+                       <div class="project-links">
+                            <a target="_blank" href="https://subtrackrr.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/DevanteH93/SubTrackr">GitHub</a>
+                       </div>
+                </div>
+                <div class="image-div">
+                    <img class="big-img" src="./photos/Screenshot 2026-01-05 095005.png" alt="SubTrackr-thumbnail">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <center><p>By<a target="_blank" href="https://github.com/DevanteH93"> DevanteHarvey</a></p></center></footer><br/>
+    <p>Email: devanteh93@gmail.com</p><p>Phone #: (564)239-8272</p>
+</footer>
+<script>
+    //This is where we create the interactivity for our little color switching game
+
+    //1. select all the html elements so that we can later manipulate them
+    const body = document.querySelector('body')
+    const colorInput = document.getElementById('color-picker')
+    const colorDiv = document.querySelector('.color-div')
+    const hiddenText = document.querySelector('.color-div p')
+    const resetBtn = document.querySelector('.color-div button')
+    const playBtn = document.getElementById('play-game')
+    //2. create functions that handle the game logic
+
+    function playGame() {
+        // this function enables the play of the game by showing the color selector input
+        colorDiv.style.display = 'block'
+        playBtn.style.display = 'none'
+    }
+    
+    function changeColor() {
+        // take the users selected color on the input, and assign it to be the background color of the website
+        const selectedColor = colorInput.value
+        body.style.background = selectedColor
+        resetBtn.style.display = 'block'
+        hiddenText.style.display = 'block'
+        colorInput.style.display = 'none'
+    }
+
+    function resetColor() {
+       
+        body.style.background = 'white'
+        colorInput.style.display = 'block'
+        playBtn.style.display = 'block'
+
+        hiddenText.style.display = 'none'
+        resetBtn.style.display = 'none'
+        colorDiv.style.display = 'none'
+         }
+
+    //3. is to assign the functions to the buttons by adding them function call to the actual elements (done above in the html code)
+</script>
+</body>
+</html>
